@@ -31,6 +31,7 @@ body {
 
 #blogtitle {
   font-size: 6rem;
+  font-family: 'Fredoka One', cursive;
 }
 
 @media (min-width: 992px) {
