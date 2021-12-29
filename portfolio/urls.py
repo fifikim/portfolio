@@ -21,6 +21,7 @@ from projects import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("projects/", include("projects.urls")),
     path('', views.home, name='home'),
     path('blog/', include('blog.urls')),
 ]
