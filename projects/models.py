@@ -3,6 +3,7 @@ from django.db import models
 class Project(models.Model):
   title = models.CharField(max_length=100)
   description = models.CharField(max_length=250)
+  stack = models.CharField(max_length=100, blank=True)
   image = models.ImageField(upload_to='projects/images/')
   url = models.URLField(blank=True)
 

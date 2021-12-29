@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Fredoka+One&family=Monofett&family=Poiret+One&family=Sacramento&display=swap');
+
+/* set body background color, text alignment, & default font */
+body {
+  background-color: #f0c5f9;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+#fifi {
+  border-radius: 50%;
+}
+
+#topNav {
+  background-color: #df91ee;
+  font-family: 'Fredoka One', cursive;
+}
+
 .navbar-nav .nav-link {
   color: rgba(0,0,0,1) !important;
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgba(0,0,0,.5) !important;
+  color: #8801D0 !important;
 }
 
-body {
-  font-family: 'Lato', sans-serif;
+#section-heading {
+  font-family: 'Fredoka One', cursive;
 }
 
 #blogtitle {
@@ -16,7 +35,7 @@ body {
 
 @media (min-width: 992px) {
   #hometext {
-      font-size: 4rem;
+      font-size: 6rem;
   }
   #blogdetailtitle {
       font-size: 5rem;

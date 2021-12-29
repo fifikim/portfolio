@@ -14,7 +14,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" href="{% static "projects/Logo.png" %}">
+  <link rel="icon" type="image/png" href="{% static "projects/daisy.png" %}">
 
   <title>Sophia Kim </title>
 </head>
@@ -24,7 +24,7 @@
   <nav id="topNav" class="navbar navbar-expand-md navbar-light">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static "projects/Logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
+        <img src="{% static "projects/daisy.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
         <span>Sophia Kim | 🚧 under construction 🚧 </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,13 +36,13 @@
             <a class="nav-link" href="{% static "projects/resume.pdf" %}">Resume</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog:all_blogs' %}" target="_blank">Blog</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/fifikim/" target="_blank">LinkedIn</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/fifikim" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
           </li>
         </ul>
       </div>

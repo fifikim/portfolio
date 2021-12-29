@@ -3,34 +3,24 @@
 {% load static %}
 
 {% block content %}
-
-<div class="row justify-content-center my-3">
+<div class="my-5 d-flex flex-row align-items-center">
+  <div class="col-md-7">
+    <h4>Sophia Kim is a full stack software engineer working in JavaScript, Python and (soon) Java</h4>
+  </div>
   <div class="col-5">
-    <img src="{% static 'projects/fifi.jpeg' %}" class="img-fluid">
+    <img src="{% static 'projects/fifi.jpeg' %}" id="fifi" class="img-fluid">
   </div>
 </div>
 
-<div class="row justify-content-center mb-3">
-  <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">Sophia Kim is a full stack software engineer working in JavaScript, Python and (soon) Java</h1>
-  </div>
-</div>
-
-<h2 class="mt-5">Portfolio</h2>
+<h2 id="section-heading" class="mt-5 align-left">Portfolio</h2>
 <hr>
 <div class="row">
   {% for project in projects %}
   <div class="col-lg-4 col-md-6">
 
-    {% if project.url %}
-    <a href="{{ project.url }}">
-      <img src="{{ project.image.url }}" class="img-fluid mb-2">
-    </a>
-    {% else %}
-
     <img src="{{ project.image.url }}" class="img-fluid mb-2">
-    {% endif %}
-    <h3>{{ project.title }}</h3>
+    
+    <h3 id="section-heading">{{ project.title }}</h3>
     <p>{{ project.description }}</p>
 
   </div>
