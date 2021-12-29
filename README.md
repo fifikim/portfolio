@@ -1,2 +1,2 @@
 # portfolio
-fifikim.com React portfolio
+<a href='fifikim.com'>Sophia Kim web portfolio</a> 
