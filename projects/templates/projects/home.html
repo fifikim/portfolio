@@ -20,9 +20,9 @@
 
 <h2 id="section-heading" class="mt-5 align-left">Portfolio</h2>
 <hr>
-<div class="row">
+<div class="row align-center">
   {% for project in projects %}
-  <div class="card border-dark m-3" style="max-width: 18rem;">
+  <div class="card border-dark m-3" style="max-width: 20rem;">
     <a href="{% url 'project_detail' project.pk %}">
       <img src="{{ project.image.url }}" class="card-img-top" alt="project-preview">
     </a>
