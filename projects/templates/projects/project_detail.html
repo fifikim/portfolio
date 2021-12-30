@@ -1,25 +1,23 @@
 {% extends 'projects/base.html' %}
 {% block content %}
 
-<h1 class="text-center mt-5 section-heading">{{ project.title }}</h1>
-<img src="{{ project.image.url }}" width="600">
-<br>
-
+<h1 class="text-center mt-5" id="section-heading">{{ project.title }}</h1>
+<h3>{{ project.description|safe }}</h3>
+<h5>Stack: {{ project.stack }}</h5> 
 {% if project.url %}
-  <a href="{{ project.url }}">Project Link</a> 
+  <h5><a href="{{ project.url }}" class="link-dark">Project Link</a> |
 {% else %}
-  Project link coming soon
+  <h5>
 {% endif %}
 
 {% if project.github %}
-  <a href="{{ project.github }}">| GitHub </a> 
+  <a href="{{ project.github }}" class="link-dark"> GitHub </a></h5>
 {% else %}
-  | GitHub link coming soon 
+  GitHub link coming soon</h5>
 {% endif %}
+<br>
 
-<br>
-Tech Stack: {{ project.stack }}
-<br>
-{{ project.description|safe }}
+<img src="{{ project.image.url }}" width="70%">
+
 
 {% endblock %}
