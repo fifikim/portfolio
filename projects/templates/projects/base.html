@@ -22,7 +22,7 @@
 
 <body>
 
-  <nav id="topNav" class="navbar navbar-expand-md navbar-light align-items-center">
+  <nav id="topNav" class="section-heading navbar navbar-expand-md navbar-light align-items-center">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static "projects/daisy.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Sophia's Logo">
@@ -34,10 +34,10 @@
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% static "projects/resume.pdf" %}">Resume</a>
+            <a class="nav-link" href="{% static "projects/resume.pdf" %}" target="_blank">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'blog:all_blogs' %}" target="_blank">Blog</a>
+            <a class="nav-link" href="{% url 'blog:all_blogs' %}">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/fifikim/" target="_blank">LinkedIn</a>
@@ -49,14 +49,16 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div>
     {% block content %}{% endblock %}
   </div>
 
   <footer>
     <hr>
     <!-- footer containing page copyright-->
-    <p>© 2021 sophia kim</p>
+    <div class="container">
+      <p id="section-heading">© 2021 Sophia Kim</p>
+    </div>
     <hr>
   </footer>
 

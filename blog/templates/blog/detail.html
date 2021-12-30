@@ -1,9 +1,12 @@
 {% extends 'projects/base.html' %}
 {% block content %}
 
-<h1 class="text-center mt-5" id="section-heading">{{ post.title }}</h1>
-<h5 class="text-center text-muted mb-5">{{ post.date|date:'F jS Y' }}</h5>
-<div class="text-left">
-  {{ post.text|safe }}
+<div class="container col-8">
+  <h1 class="text-center mt-5" id="section-heading">{{ post.title }}</h1>
+  <h5 class="text-center text-muted mb-5">{{ post.date|date:'F jS Y' }}</h5>
+  <div class="post text-left">
+    {{ post.text|safe }}
+  </div>
 </div>
+
 {% endblock %}
