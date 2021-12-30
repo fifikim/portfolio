@@ -40,6 +40,15 @@ a:visited { color: #8801D0 }
 a:hover   { color: rgb(87, 6, 250); }
 a:active  { color: #e406bfc9; }
 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
 @media (min-width: 992px) {
   #hometext {
       font-size: 6rem;

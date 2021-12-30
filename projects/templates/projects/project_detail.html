@@ -4,7 +4,19 @@
 <h1 class="text-center mt-5" id="section-heading">{{ project.title }}</h1>
 <img src="{{ project.image.url }}" width="600">
 <br>
-<a href="{{ project.url }}">Project Link</a> | <a href="{{ project.github }}">GitHub</a>
+
+{% if project.url %}
+  <a href="{{ project.url }}">Project Link</a> 
+{% else %}
+  Project link coming soon
+{% endif %}
+
+{% if project.github %}
+  <a href="{{ project.github }}">| GitHub </a> 
+{% else %}
+  | GitHub link coming soon 
+{% endif %}
+
 <br>
 Tech Stack: {{ project.stack }}
 <br>
